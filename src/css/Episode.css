@@ -1,0 +1,19 @@
+.episode {
+  display: flex;
+  font-weight: bold;
+}
+
+.episode-no {
+  font-size: 25px;
+  border-right: 3px #d1d1d1 solid;
+}
+
+.episode-title {
+  font-size: 25px;
+  color: #00bdd4;
+}
+
+.episode-date {
+  font-size: 20px;
+  color: #959595;
+}

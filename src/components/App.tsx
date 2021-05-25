@@ -12,7 +12,7 @@ function App() {
         <Title />
         <EpisodeList />
       </article>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

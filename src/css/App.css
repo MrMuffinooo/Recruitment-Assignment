@@ -1,7 +1,8 @@
 .App {
-  text-align: center;
   min-height: 100vh;
   font-family: "Lato";
+  display: flex;
+  flex-direction: column;
 }
 
 .App-header {
@@ -24,13 +25,38 @@ header {
   padding-left: 65px;
 }
 
-article{
+article {
   display: flex;
-  height: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
-#logo{
+@media screen and (max-width: 1000px) {
+  article {
+    flex-direction: column;
+  }
+}
+
+#img-wrapper {
+  text-align: center;
+}
+
+#logo {
   width: 70%;
+}
+
+#left-pane,
+#right-pane {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+#left-pane {
+  font-size: 60px;
+}
+
+#right-pane {
+  background-color: greenyellow;
 }
 
 footer {
@@ -38,6 +64,7 @@ footer {
   color: #cccccc;
   font-weight: 700;
   font-size: 16px;
+  text-align: center;
   height: 67px;
   line-height: 67px;
 }
