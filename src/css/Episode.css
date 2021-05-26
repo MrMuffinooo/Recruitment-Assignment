@@ -1,16 +1,23 @@
 .episode {
   display: flex;
   font-weight: bold;
+  height: 106px;
 }
 
 .episode-no {
   font-size: 25px;
-  border-right: 3px #d1d1d1 solid;
+  border-right: 1px #d1d1d1 solid;
+  width: 120px;
+  padding-top: 16px;
+}
+
+.episode-details {
+  margin: 16px 29px;
 }
 
 .episode-title {
   font-size: 25px;
-  color: #00bdd4;
+  margin-bottom: 16px;
 }
 
 .episode-date {

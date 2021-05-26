@@ -1,5 +1,5 @@
 function Header(): JSX.Element {
-  return <header>LOREM</header>;
+  return <header>LOREM IPSUM</header>;
 }
 
 export default Header;

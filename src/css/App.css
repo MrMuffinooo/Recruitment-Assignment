@@ -19,8 +19,9 @@
 header {
   height: 95px;
   background-color: #daed49;
-  line-height: 95px;
+  line-height: 90px;
   font-size: 35px;
+  font-weight: bold;
   text-align: left;
   padding-left: 65px;
 }
@@ -42,7 +43,9 @@ article {
 }
 
 #logo {
-  width: 70%;
+  margin-top: 41px;
+  position: relative;
+  left: 23px;
 }
 
 #left-pane,
@@ -51,12 +54,21 @@ article {
   flex-basis: 0;
 }
 
-#left-pane {
+.text-wrapper {
   font-size: 60px;
+  margin: 120px 197px 0;
 }
 
-#right-pane {
-  background-color: greenyellow;
+.episodes-wrapper .episode:nth-child(2n + 1) .episode-title {
+  color: #00bdd4;
+}
+
+.episodes-wrapper .episode:nth-child(2n) .episode-title {
+  color: #bdd800;
+}
+
+.episodes-wrapper {
+  margin: 120px 76px;
 }
 
 footer {

@@ -10,7 +10,9 @@ function App() {
       <Header />
       <article>
         <Title />
-        <EpisodeList />
+        <div id="right-pane">
+          <EpisodeList />
+        </div>
       </article>
       <Footer />
     </div>

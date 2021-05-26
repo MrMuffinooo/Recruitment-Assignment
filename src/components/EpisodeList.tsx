@@ -26,21 +26,11 @@ function EpisodeList() {
 
   //console.log(networkStatus);
 
-  if (loading)
-    return (
-      <div id="right-pane">
-        <p>Loading...</p>
-      </div>
-    );
-  if (error)
-    return (
-      <div id="right-pane">
-        <p>Error</p>
-      </div>
-    );
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error</p>;
 
   return (
-    <div id="right-pane">
+    <div className="episodes-wrapper">
       {data.episodes.results.map((ep: Episode) => (
         <Episode no={ep.episode} title={ep.name} air={ep.air_date} />
       ))}
