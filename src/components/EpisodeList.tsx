@@ -10,7 +10,7 @@ interface Episode {
 function EpisodeList() {
   const EPISODES = gql`
     {
-      episodes {
+      episodes(filter: { episode: "S04" }) {
         results {
           episode
           name
@@ -20,10 +20,24 @@ function EpisodeList() {
     }
   `;
 
-  const { loading, error, data } = useQuery(EPISODES);
+  const { loading, error, data, networkStatus } = useQuery(EPISODES, {
+    notifyOnNetworkStatusChange: true,
+  });
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error</p>;
+  //console.log(networkStatus);
+
+  if (loading)
+    return (
+      <div id="right-pane">
+        <p>Loading...</p>
+      </div>
+    );
+  if (error)
+    return (
+      <div id="right-pane">
+        <p>Error</p>
+      </div>
+    );
 
   return (
     <div id="right-pane">
