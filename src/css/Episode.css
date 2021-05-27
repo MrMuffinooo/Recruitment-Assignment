@@ -1,7 +1,7 @@
 .episode {
   display: flex;
   font-weight: bold;
-  height: 106px;
+  min-height: 106px;
 }
 
 .episode-no {
@@ -23,4 +23,38 @@
 .episode-date {
   font-size: 20px;
   color: #959595;
+}
+
+@media (max-width: 1500px) {
+  .episode {
+    flex-grow: 1;
+    min-height: 126px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px #d1d1d1 solid;
+    overflow: hidden;
+  }
+
+  .episode:last-child {
+    border: none;
+  }
+
+  .episode-no {
+    font-size: 18px;
+    border-right: none;
+    margin-bottom: 13px;
+  }
+
+  .episode-details {
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .episode-title {
+    font-size: 18px;
+  }
+
+  .episode-date {
+    font-size: 15px;
+  }
 }

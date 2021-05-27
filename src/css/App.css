@@ -35,15 +35,29 @@ header {
   width: 43.7vw;
 }
 
-header::after {
-  content: "";
-  height: 100px;
-  display: inline-block;
-  background-color: #00bdd4;
-  transform: skewX(-30deg);
-  width: 60%;
-  position: relative;
-  left: 50px;
+@media not all and (max-width: 1500px) {
+  header::after {
+    content: "";
+    height: 100px;
+    display: inline-block;
+    background-color: #00bdd4;
+    transform: skewX(-30deg);
+    width: 60%;
+    position: relative;
+    left: 50px;
+  }
+
+  #logo {
+    margin-top: 41px;
+    position: relative;
+    right: 125px;
+  }
+}
+
+.highlighted-title {
+  font-size: 70px;
+  color: #00bdd4;
+  font-weight: bold;
 }
 
 article {
@@ -52,20 +66,10 @@ article {
   flex-shrink: 1;
 }
 
-@media screen and (max-width: 1000px) {
-  article {
-    flex-direction: column;
-  }
-}
-
 #img-wrapper {
   text-align: center;
-}
-
-#logo {
-  margin-top: 41px;
-  position: relative;
-  left: 23px;
+  max-width: 351px;
+  margin: auto;
 }
 
 #left-pane,
@@ -76,7 +80,7 @@ article {
 
 .text-wrapper {
   font-size: 60px;
-  margin: 120px 197px 0;
+  margin: 120px 150px 0 197px;
 }
 
 .episodes-wrapper .episode:nth-child(2n + 1) .episode-title {
@@ -88,7 +92,9 @@ article {
 }
 
 .episodes-wrapper {
-  margin: 120px 76px;
+  margin: 120px 15px 120px 78px;
+  display: flex;
+  flex-flow: column;
 }
 
 footer {
@@ -97,6 +103,60 @@ footer {
   font-weight: 700;
   font-size: 16px;
   text-align: center;
-  height: 67px;
+  height: 73px;
   line-height: 67px;
+  margin-top: 27px;
+}
+footer::before {
+  content: "\00a0\00a0";
+}
+
+@media (max-width: 1500px) {
+  article {
+    flex-direction: column;
+  }
+
+  header {
+    padding: 0;
+    width: 100vw;
+    height: 71px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .title-text {
+    display: inline;
+    width: 100%;
+  }
+
+  .text-wrapper {
+    font-size: 35px;
+    margin: 41px 28px 0;
+  }
+
+  .highlighted-title {
+    font-size: 40px;
+    color: #00bdd4;
+    font-weight: bold;
+  }
+
+  #logo {
+    margin: 41px 0;
+    max-width: 100%;
+    position: relative;
+    right: 6px;
+  }
+
+  .episodes-wrapper {
+    margin: -2px 28px 58px;
+  }
+
+  footer {
+    font-size: 14px;
+    height: 52px;
+    line-height: 49px;
+  }
+  footer::after {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+  }
 }
