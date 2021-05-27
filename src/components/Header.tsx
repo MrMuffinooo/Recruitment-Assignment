@@ -1,4 +1,4 @@
-function Header(): JSX.Element {
+function Header() {
   return (
     <header>
       <span className="title-text">LOREM IPSUM</span>
