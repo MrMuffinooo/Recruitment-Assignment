@@ -12,7 +12,7 @@
 }
 
 .episode-details {
-  margin: 16px 29px;
+  margin: 16px 28.7px;
 }
 
 .episode-title {
@@ -27,7 +27,7 @@
 
 @media (max-width: 1500px) {
   .episode {
-    min-height: 126px;
+    min-height: 127px;
     flex-direction: column;
     border-bottom: 1px #d1d1d1 solid;
   }
@@ -48,6 +48,7 @@
 
   .episode-title {
     font-size: 18px;
+    margin-bottom: 14px;
   }
 
   .episode-date {

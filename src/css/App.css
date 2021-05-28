@@ -24,7 +24,7 @@ header {
   height: 90px;
   width: 130%;
   padding-bottom: 5px;
-  padding-left: 65px;
+  padding-left: 65.6px;
 
   font-size: 35px;
   font-weight: bold;
@@ -33,7 +33,7 @@ header {
 
 .title-text {
   display: inline-block;
-  width: 43.7vw;
+  width: 43.35vw;
 }
 
 @media not all and (max-width: 1500px) {
@@ -145,12 +145,12 @@ footer {
   }
 
   .episodes-wrapper {
-    margin: -2px 28px 58px;
+    margin: -2px 25px 20px;
   }
 
   footer {
     font-size: 14px;
-    height: 52px;
+    height: 53px;
     line-height: 49px;
   }
   footer::after {
