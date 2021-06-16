@@ -25,15 +25,15 @@ header {
   width: 130%;
   padding-bottom: 5px;
   padding-left: 65.6px;
-
-  font-size: 35px;
-  font-weight: bold;
-  text-align: left;
 }
 
 .title-text {
   display: inline-block;
   width: 43.35vw;
+
+  font-size: 35px;
+  font-weight: bold;
+  text-align: left;
 }
 
 @media not all and (max-width: 1500px) {
@@ -69,11 +69,17 @@ article {
 }
 
 .text-wrapper {
-  font-size: 60px;
   margin: 120px 150px 0 197px;
 }
 
+.text-pre-title {
+  display: inline;
+  font-size: 60px;
+  font-weight: normal;
+}
+
 .highlighted-title {
+  display: inline;
   font-size: 70px;
   font-weight: bold;
   color: #00bdd4;
@@ -89,6 +95,8 @@ article {
   margin: 120px 15px 120px 76px;
   display: flex;
   flex-flow: column;
+  list-style-type: none;
+  padding: 0;
 }
 
 .episodes-wrapper .episode:nth-child(2n + 1) .episode-title {

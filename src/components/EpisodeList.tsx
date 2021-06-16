@@ -30,11 +30,11 @@ function EpisodeList() {
   if (error) return <p>Error</p>;
 
   return (
-    <div className="episodes-wrapper">
+    <ul className="episodes-wrapper">
       {data.episodes.results.map((ep: Episode) => (
         <Episode no={ep.episode} title={ep.name} air={ep.air_date} />
       ))}
-    </div>
+    </ul>
   );
 }
 

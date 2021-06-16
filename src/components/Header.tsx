@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header>
-      <span className="title-text">LOREM IPSUM</span>
+      <h3 className="title-text">LOREM IPSUM</h3>
     </header>
   );
 }

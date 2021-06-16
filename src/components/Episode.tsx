@@ -8,13 +8,13 @@ interface EpisodeInfo {
 
 function Episode({ no, title, air }: EpisodeInfo) {
   return (
-    <div className="episode">
+    <li className="episode">
       <div className="episode-no">{no}</div>
       <div className="episode-details">
         <div className="episode-title">{title}</div>
         <div className="episode-date">{air}</div>
       </div>
-    </div>
+    </li>
   );
 }
 
