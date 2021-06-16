@@ -45,14 +45,17 @@ header {
 
     display: inline-block;
     position: relative;
-    left: 50px;
+    left: 57px;
     transform: skewX(-30deg);
+  }
+
+  #img-wrapper {
+    max-width: 647px;
   }
 
   #logo {
     margin-top: 41px;
-    position: relative;
-    right: 125px;
+    width: 100%;
   }
 }
 
@@ -69,7 +72,7 @@ article {
 }
 
 .text-wrapper {
-  margin: 120px 150px 0 197px;
+  margin: 120px 10% 0 20.5%;
 }
 
 .text-pre-title {
@@ -87,12 +90,11 @@ article {
 
 #img-wrapper {
   text-align: center;
-  max-width: 351px;
-  margin: auto;
+  margin-left: 18.8%;
 }
 
 .episodes-wrapper {
-  margin: 120px 15px 120px 76px;
+  margin: 120px 15px 120px 8%;
   display: flex;
   flex-flow: column;
   list-style-type: none;
@@ -149,6 +151,11 @@ footer {
     font-size: 40px;
   }
 
+  #img-wrapper {
+    margin: 0 7.5%;
+    align-items: center;
+  }
+
   #logo {
     margin: 41px 0;
     max-width: 100%;
@@ -157,7 +164,7 @@ footer {
   }
 
   .episodes-wrapper {
-    margin: -2px 25px 20px;
+    margin: -1px 25px 20px;
   }
 
   footer {

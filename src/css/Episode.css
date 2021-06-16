@@ -9,6 +9,7 @@
   padding-top: 16px;
   font-size: 25px;
   border-right: 1px #d1d1d1 solid;
+  flex-shrink: 0;
 }
 
 .episode-details {
@@ -44,6 +45,7 @@
 
   .episode-details {
     margin: 0;
+    margin-bottom: 22px;
   }
 
   .episode-title {
