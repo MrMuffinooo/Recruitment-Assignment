@@ -36,7 +36,7 @@ header {
   text-align: left;
 }
 
-@media not all and (max-width: 1500px) {
+@media not all and (max-width: 1000px) {
   header::after {
     content: "";
     height: 100px;
@@ -118,7 +118,7 @@ footer {
   margin-top: 27px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
   article {
     flex-direction: column;
   }
@@ -127,17 +127,21 @@ footer {
     padding: 0;
     width: 100vw;
     height: 71px;
-    text-align: center;
-    font-size: 30px;
   }
 
   .title-text {
-    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    text-align: center;
     width: 100%;
   }
 
-  .text-wrapper {
+  .text-pre-title {
     font-size: 35px;
+  }
+
+  .text-wrapper {
     margin: 41px 28px 0;
   }
 

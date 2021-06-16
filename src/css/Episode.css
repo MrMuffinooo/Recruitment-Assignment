@@ -25,7 +25,7 @@
   color: #959595;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1000px) {
   .episode {
     min-height: 127px;
     flex-direction: column;
