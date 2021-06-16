@@ -8,7 +8,7 @@ interface EpisodeInfo {
 
 function Episode({ no, title, air }: EpisodeInfo) {
   return (
-    <li className="episode">
+    <li className="episode" key={no.toString()}>
       <div className="episode-no">{no}</div>
       <div className="episode-details">
         <div className="episode-title">{title}</div>

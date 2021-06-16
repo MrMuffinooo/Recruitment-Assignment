@@ -1,13 +1,13 @@
 import Episode from "./Episode";
 import { useQuery, gql } from "@apollo/client";
 
-interface Episode {
-  episode: String;
-  name: String;
-  air_date: String;
-}
-
 function EpisodeList() {
+  interface Episode {
+    episode: String;
+    name: String;
+    air_date: String;
+  }
+
   const EPISODES = gql`
     {
       episodes(filter: { episode: "S04" }) {
@@ -20,11 +20,9 @@ function EpisodeList() {
     }
   `;
 
-  const { loading, error, data, networkStatus } = useQuery(EPISODES, {
+  const { loading, error, data } = useQuery(EPISODES, {
     notifyOnNetworkStatusChange: true,
   });
-
-  //console.log(networkStatus);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error</p>;
