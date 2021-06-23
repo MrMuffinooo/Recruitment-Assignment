@@ -3,7 +3,7 @@ import { useQuery, gql } from "@apollo/client";
 
 function EpisodeList() {
   interface Episode {
-    episode: String;
+    episode: string;
     name: String;
     air_date: String;
   }
@@ -30,7 +30,12 @@ function EpisodeList() {
   return (
     <ul className="episodes-wrapper">
       {data.episodes.results.map((ep: Episode) => (
-        <Episode no={ep.episode} title={ep.name} air={ep.air_date} />
+        <Episode
+          no={ep.episode}
+          title={ep.name}
+          air={ep.air_date}
+          key={ep.episode}
+        />
       ))}
     </ul>
   );
